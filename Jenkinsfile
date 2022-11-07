@@ -14,8 +14,8 @@ pipeline {
     
     stage('Build Image') {
       steps {
-      sh "docker build -t brainupgrade/request-logger:${env.BUILD_ID} ."
-      sh "docker tag brainupgrade/request-logger:${env.BUILD_ID} brainupgrade/request-logger:latest"
+      sh "docker build -t mskshravan1/request-logger:${env.BUILD_ID} ."
+      sh "docker tag brainupgrade/request-logger:${env.BUILD_ID} mskshravan1/request-logger:latest"
       }
     }
     
